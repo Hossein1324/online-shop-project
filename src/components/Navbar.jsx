@@ -1,5 +1,5 @@
 import React from "react";
-import { LuShoppingCart } from "react-icons/lu";
+import { TfiShoppingCart } from "react-icons/tfi";
 
 function Navbar() {
   return (
@@ -37,7 +37,13 @@ function Navbar() {
             </div>
           </div>
           <a className="d-flex" href="#">
-            <LuShoppingCart color="white" size={35} />
+            <button type="button" class="btn btn-dark position-relative">
+              <TfiShoppingCart size={32} />
+              <span class="position-absolute top-0 end-100 badge rounded-pill bg-danger ">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
           </a>
         </div>
       </nav>
