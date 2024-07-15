@@ -1,5 +1,6 @@
 import React from "react";
 import { TfiShoppingCart } from "react-icons/tfi";
+import { TbBrandDatabricks } from "react-icons/tb";
 
 function Navbar() {
   return (
@@ -7,7 +8,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg  bg-dark navbar-dark">
         <div className="container-fluid">
           <a className="navbar-brand fs-3" href="#">
-            Brand
+            <TbBrandDatabricks size={50} />
           </a>
           <button
             className="navbar-toggler"
@@ -37,9 +38,9 @@ function Navbar() {
             </div>
           </div>
           <a className="d-flex" href="#">
-            <button type="button" class="btn btn-dark position-relative">
+            <button type="button" class="btn btn-dark position-relative ms-1">
               <TfiShoppingCart size={32} />
-              <span class="position-absolute top-0 end-100 badge rounded-pill bg-danger ">
+              <span class="position-absolute  top-0 end-100 badge rounded-pill bg-danger ">
                 99+
                 <span class="visually-hidden">unread messages</span>
               </span>
