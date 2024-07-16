@@ -1,6 +1,9 @@
 import React from "react";
 import { RiDiscountPercentLine } from "react-icons/ri";
-import dress from "../images/photo1721071586 (1).jpeg";
+import Hoodi from "../images/photo1721131255.jpeg";
+import h from "../images/photo1721131255 (2).jpeg";
+import b from "../images/photo1721131255 (1).jpeg";
+
 import { LuShoppingCart } from "react-icons/lu";
 
 function Main() {
@@ -8,17 +11,44 @@ function Main() {
     <div>
       <div className="container px-4 text-center">
         <div className="row gx-5">
-          <div className="col ">
+          <div className="col-sm ">
             <div className="p-3">
               <img
                 style={{ height: "520px" }}
                 className="mw-100 rounded-3 "
-                src={dress}
+                src={Hoodi}
                 alt=""
               />
+              <div className=" d-flex justify-content-center">
+                <a>
+                  <img
+                    className="rounded-5 mt-2 p-1 "
+                    src={h}
+                    alt=""
+                    style={{ width: "104px", height: "104px" }}
+                  />
+                </a>
+                <a>
+                  <img
+                    className="rounded-5 mt-2 p-1 "
+                    src={b}
+                    alt=""
+                    style={{ width: "104px", height: "104px" }}
+                  />
+                </a>
+
+                <a>
+                  <img
+                    className="rounded-5 mt-2 p-1 "
+                    src={Hoodi}
+                    alt=""
+                    style={{ width: "104px", height: "104px" }}
+                  />
+                </a>
+              </div>
             </div>
           </div>
-          <div className="col mt-5">
+          <div className="col-sm mt-5">
             <div className="p-3">
               <div className="container text-center">
                 <div className="row">
@@ -33,35 +63,32 @@ function Main() {
                         iusto nesciunt assumenda magni!
                       </p>
                     </div>
-                    <div className="row row-cols-3 mt-3">
-                      <div className="col-3">
-                        <h4>$125.00</h4>
+                    <div className="d-flex justify-content-center">
+                      <div className=" d-flex flex-row mb-3">
+                        <div className="p-3">
+                          <h4>$125.00</h4>
+                        </div>
+                        <div className="p-1">
+                          <h5>
+                            <span className="badge rounded-pill text-bg-dark mt-3">
+                              50%
+                            </span>
+                          </h5>
+                        </div>
                       </div>
-                      <div className="col-1 mt-1">
-                        <h5>
-                          <span class="badge rounded-pill text-bg-dark">
-                            50%
-                          </span>
-                        </h5>
-                      </div>
-                      <div className="col-8"></div>
                     </div>
-                    <div className="row row-cols-3 mt-5">
-                      <div className="col-5 me-5">
-                        <input
-                          style={{ width: "200px", height: "40px" }}
-                          type="number"
-                        />
+                    <div className="container px-2 text-center mt-3 ">
+                      <div className="row gx-2 gy-2">
+                        <div className="col-xxl">
+                          <input className="py-1 px-3 " type="number" />
+                        </div>
+                        <div className="col-xxl">
+                          <button className=" py-2 px-4 btn btn-dark text-center  ">
+                            <LuShoppingCart color="white" size={18} /> Add to
+                            card
+                          </button>
+                        </div>
                       </div>
-                      <div className="col-5">
-                        <button
-                          style={{ width: "300px", height: "40px" }}
-                          className="btn btn-dark text-center "
-                        >
-                          <LuShoppingCart color="white" size={18} /> Add to card
-                        </button>
-                      </div>
-                      <div className="col-2"></div>
                     </div>
                   </div>
                   .

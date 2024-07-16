@@ -5,9 +5,9 @@ import { TbBrandDatabricks } from "react-icons/tb";
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg  bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-lg  bg-dark navbar-dark w-100">
         <div className="container-fluid">
-          <a className="navbar-brand fs-3" href="#">
+          <a className="navbar-brand " href="#">
             <TbBrandDatabricks size={50} />
           </a>
           <button
@@ -38,11 +38,14 @@ function Navbar() {
             </div>
           </div>
           <a className="d-flex" href="#">
-            <button type="button" class="btn btn-dark position-relative ms-1">
+            <button
+              type="button"
+              className="btn btn-dark position-relative ms-1"
+            >
               <TfiShoppingCart size={32} />
-              <span class="position-absolute  top-0 end-100 badge rounded-pill bg-danger ">
+              <span className="position-absolute  top-0 end-100 badge rounded-pill bg-danger ">
                 99+
-                <span class="visually-hidden">unread messages</span>
+                <span className="visually-hidden">unread messages</span>
               </span>
             </button>
           </a>
