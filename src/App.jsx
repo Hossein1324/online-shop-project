@@ -6,10 +6,20 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 
 function App() {
+  const [number, setNumber] = useState(0);
+  const Plus = () => {
+    setNumber((e) => e + 1);
+  };
+  const Minus = () => {
+    setNumber((e) => e - 1);
+    if (number === 0) {
+      setNumber(0);
+    }
+  };
   return (
     <>
-      <Navbar />
-      <Main />
+      <Navbar prodouctNumber={number} />
+      <Main Plus={Plus} Minus={Minus} number={number} />
     </>
   );
 }

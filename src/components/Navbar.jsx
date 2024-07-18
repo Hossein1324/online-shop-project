@@ -2,7 +2,7 @@ import React from "react";
 import { TfiShoppingCart } from "react-icons/tfi";
 import { TbBrandDatabricks } from "react-icons/tb";
 
-function Navbar() {
+function Navbar({ prodouctNumber }) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg  bg-dark navbar-dark w-100">
@@ -43,8 +43,8 @@ function Navbar() {
               className="btn btn-dark position-relative ms-1"
             >
               <TfiShoppingCart size={32} />
-              <span className="position-absolute  top-0 end-100 badge rounded-pill bg-danger ">
-                99+
+              <span className="position-absolute  top-0 end-100 badge rounded-pill text-dark bg-light ">
+                {prodouctNumber}
                 <span className="visually-hidden">unread messages</span>
               </span>
             </button>
