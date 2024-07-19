@@ -27,6 +27,9 @@ function App() {
     }
     setProdouctNumber(number);
   };
+  const Remove = () => {
+    setProdouctNumber(0);
+  };
   return (
     <>
       <Navbar prodouctNumber={prodouctNumber} showCared={ShowCard} />
@@ -37,6 +40,7 @@ function App() {
         card={card}
         addCard={Prodouct}
         cardNumber={prodouctNumber}
+        RemoveProducts={Remove}
       />
     </>
   );

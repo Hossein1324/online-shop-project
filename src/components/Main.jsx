@@ -3,10 +3,19 @@ import { GoPlus } from "react-icons/go";
 import { TbMinus } from "react-icons/tb";
 import Hoodi from "../images/photo1721131255.jpeg";
 import h from "../images/photo1721131255 (2).jpeg";
+import { FaTrashAlt } from "react-icons/fa";
 
 import { LuShoppingCart } from "react-icons/lu";
 
-function Main({ number, Plus, Minus, card, addCard, cardNumber }) {
+function Main({
+  number,
+  Plus,
+  Minus,
+  card,
+  addCard,
+  cardNumber,
+  RemoveProducts,
+}) {
   const [img, setImg] = useState(false);
 
   return (
@@ -43,6 +52,13 @@ function Main({ number, Plus, Minus, card, addCard, cardNumber }) {
                           </div>
                           <div className="p-2 ">
                             $125.00 x {cardNumber} = {"$" + 125.0 * cardNumber}{" "}
+                            <FaTrashAlt
+                              onClick={RemoveProducts}
+                              size={20}
+                              color="white"
+                              className="ms-4"
+                              role="button"
+                            />
                           </div>
                         </div>
                       </div>
@@ -141,11 +157,12 @@ function Main({ number, Plus, Minus, card, addCard, cardNumber }) {
                               <TbMinus />
                             </button>
                             <input
+                              pla
                               onChange={addCard}
                               value={number}
                               type="tel"
                               className="form-control"
-                              placeholder=""
+                              placeholder="Choose the number of product purchases by clicking on the icons"
                               aria-label="Example text with two button addons"
                             />
                           </div>
