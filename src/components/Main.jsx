@@ -6,12 +6,47 @@ import h from "../images/photo1721131255 (2).jpeg";
 
 import { LuShoppingCart } from "react-icons/lu";
 
-function Main({ number, Plus, Minus }) {
+function Main({ number, Plus, Minus, card }) {
   const [img, setImg] = useState(false);
 
   return (
     <div>
-      <div className="container px-4 text-center">
+      <div className="container-fluid px-4 text-center">
+        {card && (
+          <div className="row">
+            <div className="col">
+              <div
+                className="alert  mb-2 bg-black text-white p-1 "
+                role="alert"
+              >
+                <h4 className="alert-heading">Cart</h4>
+
+                <hr />
+                <div className="d-flex justify-content-center">
+                  <div className="d-flex flex-row mb-3">
+                    <div className="p-2">
+                      {" "}
+                      <img
+                        className="rounded-pill mt-2 p-1 "
+                        src={h}
+                        alt=""
+                        style={{ width: "104px", height: "100px" }}
+                      />
+                    </div>
+                    <div className="p-2">
+                      <div class="d-flex flex-column mb-3 mt-2">
+                        <div class="p-2 ">Lorem, ipsum consectetur....</div>
+                        <div class="p-2 ">
+                          $125.00x {number} = {"$" + 125.0 * number}{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="row gx-5">
           <div className="col-sm ">
             <div className="p-3">

@@ -2,7 +2,7 @@ import React from "react";
 import { TfiShoppingCart } from "react-icons/tfi";
 import { TbBrandDatabricks } from "react-icons/tb";
 
-function Navbar({ prodouctNumber }) {
+function Navbar({ prodouctNumber, showCared }) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg  bg-dark navbar-dark w-100">
@@ -32,13 +32,14 @@ function Navbar({ prodouctNumber }) {
               <a className="nav-link ps-5" href="#">
                 Women
               </a>
-              <a className="nav-link ps-5 " aria-disabled="true">
+              <a className="nav-link ps-5" href="#">
                 About
               </a>
             </div>
           </div>
           <a className="d-flex" href="#">
             <button
+              onClick={showCared}
               type="button"
               className="btn btn-dark position-relative ms-1"
             >

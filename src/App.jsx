@@ -7,6 +7,10 @@ import Main from "./components/Main";
 
 function App() {
   const [number, setNumber] = useState(0);
+  const [card, setCard] = useState(false);
+  const ShowCard = () => {
+    setCard(!card);
+  };
   const Plus = () => {
     setNumber((e) => e + 1);
   };
@@ -18,8 +22,8 @@ function App() {
   };
   return (
     <>
-      <Navbar prodouctNumber={number} />
-      <Main Plus={Plus} Minus={Minus} number={number} />
+      <Navbar prodouctNumber={number} showCared={ShowCard} />
+      <Main Plus={Plus} Minus={Minus} number={number} card={card} />
     </>
   );
 }
