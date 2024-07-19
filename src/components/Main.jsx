@@ -6,7 +6,7 @@ import h from "../images/photo1721131255 (2).jpeg";
 
 import { LuShoppingCart } from "react-icons/lu";
 
-function Main({ number, Plus, Minus, card }) {
+function Main({ number, Plus, Minus, card, addCard, cardNumber }) {
   const [img, setImg] = useState(false);
 
   return (
@@ -22,27 +22,33 @@ function Main({ number, Plus, Minus, card }) {
                 <h4 className="alert-heading">Cart</h4>
 
                 <hr />
-                <div className="d-flex justify-content-center">
-                  <div className="d-flex flex-row mb-3">
-                    <div className="p-2">
-                      {" "}
-                      <img
-                        className="rounded-pill mt-2 p-1 "
-                        src={h}
-                        alt=""
-                        style={{ width: "104px", height: "100px" }}
-                      />
-                    </div>
-                    <div className="p-2">
-                      <div class="d-flex flex-column mb-3 mt-2">
-                        <div class="p-2 ">Lorem, ipsum consectetur....</div>
-                        <div class="p-2 ">
-                          $125.00x {number} = {"$" + 125.0 * number}{" "}
+                {cardNumber === 0 ? (
+                  <h1>ypour card is empty!</h1>
+                ) : (
+                  <div className="d-flex justify-content-center">
+                    <div className="d-flex flex-row mb-3">
+                      <div className="p-2">
+                        {" "}
+                        <img
+                          className="rounded-pill mt-2 p-1 "
+                          src={h}
+                          alt=""
+                          style={{ width: "104px", height: "100px" }}
+                        />
+                      </div>
+                      <div className="p-2">
+                        <div className="d-flex flex-column mb-3 mt-2">
+                          <div className="p-2 ">
+                            Lorem, ipsum consectetur....
+                          </div>
+                          <div className="p-2 ">
+                            $125.00 x {cardNumber} = {"$" + 125.0 * cardNumber}{" "}
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
@@ -135,6 +141,7 @@ function Main({ number, Plus, Minus, card }) {
                               <TbMinus />
                             </button>
                             <input
+                              onChange={addCard}
                               value={number}
                               type="tel"
                               className="form-control"
@@ -144,7 +151,10 @@ function Main({ number, Plus, Minus, card }) {
                           </div>
                         </div>
                         <div className="col-xxl">
-                          <button className=" py-2 px-4 btn btn-dark text-center  ">
+                          <button
+                            onClick={addCard}
+                            className=" py-2 px-4 btn btn-dark text-center  "
+                          >
                             <LuShoppingCart color="white" size={18} /> Add to
                             card
                           </button>

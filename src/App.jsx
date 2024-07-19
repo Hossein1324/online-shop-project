@@ -8,6 +8,7 @@ import Main from "./components/Main";
 function App() {
   const [number, setNumber] = useState(0);
   const [card, setCard] = useState(false);
+  const [prodouctNumber, setProdouctNumber] = useState(0);
   const ShowCard = () => {
     setCard(!card);
   };
@@ -20,10 +21,23 @@ function App() {
       setNumber(0);
     }
   };
+  const Prodouct = () => {
+    if (number === 0) {
+      alert("داداش یه چیزی بخر");
+    }
+    setProdouctNumber(number);
+  };
   return (
     <>
-      <Navbar prodouctNumber={number} showCared={ShowCard} />
-      <Main Plus={Plus} Minus={Minus} number={number} card={card} />
+      <Navbar prodouctNumber={prodouctNumber} showCared={ShowCard} />
+      <Main
+        Plus={Plus}
+        Minus={Minus}
+        number={number}
+        card={card}
+        addCard={Prodouct}
+        cardNumber={prodouctNumber}
+      />
     </>
   );
 }
