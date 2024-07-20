@@ -24,10 +24,7 @@ function Main({
         {card && (
           <div className="row">
             <div className="col">
-              <div
-                className="alert  mb-2 bg-black text-white p-1 "
-                role="alert"
-              >
+              <div className="alert  mb-2 bg-dark text-white p-1 " role="alert">
                 <h4 className="alert-heading">Cart</h4>
 
                 <hr />
@@ -47,10 +44,10 @@ function Main({
                       </div>
                       <div className="p-2">
                         <div className="d-flex flex-column mb-3 mt-2">
-                          <div className="p-2 ">
+                          <div className="p-2 fs-6 fw-bolder">
                             Lorem, ipsum consectetur....
                           </div>
-                          <div className="p-2 ">
+                          <div className="p-2 fs-6 fw-medium">
                             $125.00 x {cardNumber} = {"$" + 125.0 * cardNumber}{" "}
                             <FaTrashAlt
                               onClick={RemoveProducts}

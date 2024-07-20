@@ -25,7 +25,7 @@ function App() {
     if (number === 0) {
       alert("داداش یه چیزی بخر");
     }
-    setProdouctNumber(number);
+    setProdouctNumber(prodouctNumber + number);
   };
   const Remove = () => {
     setProdouctNumber(0);
