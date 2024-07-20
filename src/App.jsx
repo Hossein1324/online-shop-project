@@ -23,7 +23,7 @@ function App() {
   };
   const Prodouct = () => {
     if (number === 0) {
-      alert("داداش یه چیزی بخر");
+      alert("bro just buy somthing!");
     }
     setProdouctNumber(prodouctNumber + number);
   };

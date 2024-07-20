@@ -20,16 +20,16 @@ function Main({
 
   return (
     <div>
-      <div className="container-fluid px-4 text-center">
+      <div className="container-fluid px-5  text-center">
         {card && (
           <div className="row">
             <div className="col">
               <div className="alert  mb-2 bg-dark text-white p-1 " role="alert">
-                <h4 className="alert-heading">Cart</h4>
+                <h4 className="alert-heading">Your Cart</h4>
 
                 <hr />
                 {cardNumber === 0 ? (
-                  <h1>ypour card is empty!</h1>
+                  <h1> bro your cart is empty!</h1>
                 ) : (
                   <div className="d-flex justify-content-center">
                     <div className="d-flex flex-row mb-3">
@@ -45,7 +45,7 @@ function Main({
                       <div className="p-2">
                         <div className="d-flex flex-column mb-3 mt-2">
                           <div className="p-2 fs-6 fw-bolder">
-                            Lorem, ipsum consectetur....
+                            Black Hoodie for cold weather.
                           </div>
                           <div className="p-2 fs-6 fw-medium">
                             $125.00 x {cardNumber} = {"$" + 125.0 * cardNumber}{" "}
@@ -105,22 +105,24 @@ function Main({
               </div>
             </div>
           </div>
-          <div className="col-sm mt-5">
+          <div className="col-sm mt-5 ">
             <div className="p-3">
-              <div className="container text-center">
+              <div className="container text-center me-5">
                 <div className="row">
                   <div className="col">
-                    <h1>women drees for paty... and with nice colot</h1>
+                    <h1 className="fs-2 fw-bold text-capitalize mt-2">
+                      Black hoodie for fall season for mens
+                    </h1>
                   </div>
                   <div className="row mt-3">
                     <div className="col">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Eligendi id quod natus minus consequuntur tenetur nemo
-                        iusto nesciunt assumenda magni!
+                      <p className="fs-5 fw-normal text-capitalize">
+                        cool black hoodie for people from 18 to 30, durable for
+                        more than 10 years, warm and light, suitable for fun,
+                        events, sports, dating, ....
                       </p>
                     </div>
-                    <div className="d-flex justify-content-start">
+                    <div className="d-flex justify-content-start mt-3">
                       <div className=" d-flex flex-row mb-3">
                         <div className="p-3">
                           <h4>$125.00</h4>
@@ -167,7 +169,7 @@ function Main({
                         <div className="col-xxl">
                           <button
                             onClick={addCard}
-                            className=" py-2 px-4 btn btn-dark text-center  "
+                            className=" py-2 px-4 btn btn-dark text-center   "
                           >
                             <LuShoppingCart color="white" size={18} /> Add to
                             card
