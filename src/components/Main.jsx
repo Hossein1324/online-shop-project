@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Aos from "aos";
+
+import "aos/dist/aos.css";
 import { GoPlus } from "react-icons/go";
 import { TbMinus } from "react-icons/tb";
 import Hoodi from "../images/photo1721131255.jpeg";
@@ -17,7 +20,9 @@ function Main({
   RemoveProducts,
 }) {
   const [img, setImg] = useState(false);
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
       <div className="container-fluid px-5  text-center">
@@ -67,10 +72,11 @@ function Main({
           </div>
         )}
         <div className="row gx-5">
-          <div className="col-sm ">
+          <div data-aos="fade-right" className="col-sm ">
             <div className="p-3">
               {img ? (
                 <img
+                  data-aos="fade-up"
                   style={{ height: "520px" }}
                   className="mw-100 rounded-3 "
                   src={Hoodi}
@@ -105,7 +111,7 @@ function Main({
               </div>
             </div>
           </div>
-          <div className="col-sm mt-5 ">
+          <div data-aos="fade-left" className="col-sm mt-5 ">
             <div className="p-3">
               <div className="container text-center me-5">
                 <div className="row">
