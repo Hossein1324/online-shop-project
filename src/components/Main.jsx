@@ -41,7 +41,7 @@ function Main({
                       <div className="p-2">
                         {" "}
                         <img
-                          className="rounded-pill mt-2 p-1 "
+                          className="rounded-pill mt-2 p-1 border border-light "
                           src={h}
                           alt=""
                           style={{ width: "104px", height: "100px" }}
