@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
-
 import "aos/dist/aos.css";
 import { GoPlus } from "react-icons/go";
 import { TbMinus } from "react-icons/tb";
@@ -21,14 +20,15 @@ function Main({
 }) {
   const [img, setImg] = useState(false);
   useEffect(() => {
-    Aos.init();
+    Aos.init({ disable: "mobile" });
   }, []);
+
   return (
     <div>
       <div className="container-fluid px-5  text-center">
         {card && (
           <div className="row">
-            <div className="col">
+            <div data-aos="fade-down" className="col">
               <div className="alert  mb-2 bg-dark text-white p-1 " role="alert">
                 <h4 className="alert-heading">Your Cart</h4>
 
@@ -76,7 +76,6 @@ function Main({
             <div className="p-3">
               {img ? (
                 <img
-                  data-aos="fade-up"
                   style={{ height: "520px" }}
                   className="mw-100 rounded-3 "
                   src={Hoodi}
