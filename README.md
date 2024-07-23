@@ -1,8 +1,27 @@
-# React + Vite
+<h1>E-commerce Project</h1>
+<p>Hi! this is a real world project building by react!.</p>
+<hr/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>Build BY:</h1>
+<ul>
+<li>React</li>
+<li>Javascript</li>
+<li>Bootstrap</li>
 
-Currently, two official plugins are available:
+</ul>
+<hr>
+<h1>The Chalanges:<h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+<li>View the optimal layout for the site depending on their device's screen size ✔</li>
+<li>See hover states for all interactive elements on the page ✔</li>
+<li>Open a lightbox gallery by clicking on the large product image ✔</li>
+<li>Switch the large product image by clicking on the small thumbnail images ✔</li>
+<li>Add items to the cart ✔</li>
+<li></li>View the cart and remove items from it✔.</li>
+
+</ul>
+<h1>How To Run The Project:</h1>
+<p>I  deployed the project by netlify so you can see the prject by clicking the link on the below!</p>
+live Site: (https://onlineshop-project-react.netlify.app).
+
