@@ -1,5 +1,5 @@
 <h1>E-commerce Project</h1>
-<p>Hi! this is a real world project building by react!.</p>
+<p>Hi!👋 this is a real world project building by react!.</p>
 
 <h1> The Chalanges:</h1>
   <ul>
@@ -10,7 +10,7 @@
     <li>Add items to the car</li>
     <li>View the cart and remove items from it</li>
   </ul>
-<h1>Made Using:</h1>
+<h1>Made By:</h1>
 <ul>
 <li>React</li>
 <li>Javascript</li>
